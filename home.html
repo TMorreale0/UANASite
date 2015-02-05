@@ -52,16 +52,50 @@ a {
   color: #3282e6;
   text-decoration: none;
 }
+
+#infodisplay {
+  display: none;
+}
 </style>
+
+<script type="text/javascript">
+
+/*
+showFederation: 
+  hides the search div and replaces it with a div
+  for the specfic federations that the user is searching for
+*/
+function showFederation(id) {
+  //hide the search box
+  document.getElementById("search").style.display = "none";
+  //show the infodisplay div and update its content for the
+  //given federation
+  
+
+}
+
+</script>
 </head>
 
 <body>
 <img src="logo.jpg">
-<div class="container text-center" id="error">
+<div id="search" class="container text-center" id="error">
 
 <br><br>
 Hey
- 
+<br><br>
+<select id='fedBox'>
+        <option value="1">The Cayman Islands Amateur Swimming Association</option>
+        <option value="2">Puerto Rico</option>
+</select>
+
+<br><br>
+<button onClick='showFederation(getElementById("fedBox").value)'>Go!</button>
+
+</div>
+
+<div id="infodisplay">
+  Hello!!!!
 
 </div>
 
