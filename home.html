@@ -4,79 +4,49 @@
 <title>UANA Site</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" >
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style type="text/css">
-body {
-  /*background: linear-gradient(90deg, white, gray);*/
-  //background-color: #eee;
-}
-
-body, h1, p {
-  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.container {
-  margin-left:  auto;
-  margin-right:  auto;
-  margin-top: 177px;
-  max-width: 1170px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.row:before, .row:after {
-  display: table;
-  content: " ";
-}
-
-h1 {
-  font-size: 48px;
-  font-weight: 300;
-  margin: 0 0 20px 0;
-}
-
-.lead {
-  font-size: 21px;
-  font-weight: 200;
-  margin-bottom: 20px;
-}
-
-p {
-  margin: 0 0 10px;
-}
-
-a {
-  color: #3282e6;
-  text-decoration: none;
-}
-
-#infodisplay {
-  display: none;
-}
-</style>
-
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/grid-custom.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/site.css">
+<script src="handlebars-v2.0.0.js" type="text/javascript" />
 <script type="text/javascript">
 
 
 var federations = ["The Cayman Islands Amateur Swimming Association", "Puerto Rico"];
 
-
-/*
+/* ================
 showFederation: 
   hides the search div and replaces it with a div
   for the specfic federations that the user is searching for
-*/
+================ */
 function showFederation(id) {
   //hide the search box
   document.getElementById("search").style.display = "none";
   //show the infodisplay div and update its content for the
   //given federation
   document.getElementById("infodisplay").style.display = "block";
-  document.getElementById("infodisplay").innerHTML = federations[id]
+  document.getElementById("infodisplay").innerHTML += federations[id];
 }
+
+/* ===================
+  Create the option select box:
+    Dynamically create the option pick box
+    based off of the federations array
+=================== */
+/*
+//  MAYBE LATER
+function addOptionBox() {
+  var searchDoc = document.getElementById("search");
+  searchDoc.innerHTML += "<select id='fedBox'>";
+  for(i = 0; i < federations.length; i++) {
+    searchDoc.innerHTML += "<option value='" + i + "''>" + federations[i] + "</option>";
+  }
+  searchDoc.innerHTML += "</select>";
+}
+*/
+
+
 
 </script>
 </head>
@@ -88,6 +58,7 @@ function showFederation(id) {
 <br><br>
 Hey
 <br><br>
+
 <select id='fedBox'>
         <option value="0">The Cayman Islands Amateur Swimming Association</option>
         <option value="1">Puerto Rico</option>
@@ -98,8 +69,8 @@ Hey
 
 </div>
 
+
 <div id="infodisplay">
-  This is where the information gets displayed
 
 
 </div>
