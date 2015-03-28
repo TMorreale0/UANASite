@@ -1,5 +1,5 @@
 /* ================
-showFederation: 
+showFederation: (id: string with name of federation)
   hides the search div and replaces it with a div
   for the specfic federations that the user is searching for
 ================ */
@@ -16,7 +16,7 @@ function showFederation(id) {
 }
 
 /* ================
-getFederationData: 
+getFederationData: (fed: string with name of federation in POST format)
   calls a php script to fetch the data from the database
   and return the info in a json object for template to use
 ================ */
@@ -35,7 +35,7 @@ function getFederationData(fed) {
 }
 
 /* ================
-postData: 
+postData: (federation: raw text in JSON style from get_data.php)
   callback function from getFederationData, called when the 
   php script returns database info. Takes info, and puts it into
   the handlebars template for display on the UI
@@ -53,7 +53,7 @@ function postData(federation) {
 }
 
 /* ================
-changeData: 
+changeData: (tab: int between [1, 3])
   hides/displays elements in the Contact Info, About, People
   tabs depending on which one is active at the time
 ================ */

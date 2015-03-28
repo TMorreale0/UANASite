@@ -16,6 +16,7 @@
 
 	echo "<link rel='stylesheet' href='../css/bootstrap.min.css'>";
 
+	//If they deleted a record, delete it
 	if( $_POST["del"] != "" ) {
 		$sql = "DELETE FROM people
 				WHERE id='" . $_POST["del"] . "'";
@@ -26,6 +27,7 @@
 		}
 	}
 
+	//Insert a new record, checking whether title was custom or not
 	if( $_POST["fedName"] != "") {
 		if($_POST["title"] != "Other") {
 			$sql = "INSERT INTO people (FederationName, Discipline, ZoneNumber, Title, FullName, Email, Phone)
@@ -47,6 +49,7 @@
 
 	echo "<br><br>";
 
+	//Display the current table of all the names
 	$sql = "SELECT * FROM people";
 	$result = $conn->query($sql);
 

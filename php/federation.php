@@ -16,6 +16,7 @@
 
 	echo "<link rel='stylesheet' href='../css/bootstrap.min.css'>";
 
+	//Delete a federation if user hit the delete button
 	if( $_POST["del"] != "" ) {
 		$sql = "DELETE FROM federation
 				WHERE id='" . $_POST["del"] . "'";
@@ -26,6 +27,7 @@
 		}
 	}
 
+	//Insert a new federation
 	$sql = "";
 	if( $_POST["zoneNum"] != "") {
 		$sql = "INSERT INTO federation (FederationName, FederationFormalName, ZoneNumber, ZoneName, ContactName, Email, Phone, StreetAddress, City, Country,
@@ -46,6 +48,7 @@
 
 	echo "<br><br>";
 
+	//display allthe federation data
 	$sql = "SELECT * FROM federation";
 	$result = $conn->query($sql);
 

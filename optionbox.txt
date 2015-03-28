@@ -1,18 +1,5 @@
-<!--
+This holds the basic option box used across many different pages, as well as the zone name box.
 
-<select id='fedBox' onchange='showFederation(getElementById("fedBox").value)'>
-    <option value="-1">Federations</option>
-    <option value="0">The Cayman Islands Amateur Swimming Association</option>
-    <option value="1">Puerto Rico</option>
-</select>
-
-<select id='fedBox'>
-    <option value="-1">Federations</option>
-    <option value="The Cayman Islands Amateur Swimming Association">The Cayman Islands Amateur Swimming Association</option>
-    <option value="Puerto Rico">Puerto Rico</option>
-</select>
-
-/================================
 //called fedBox in federation.html
 //called fedName in people.html
 
@@ -70,5 +57,3 @@
 	<option value="USAS">USAS</option>
 	<option value="ACA">ACA</option>
 </select>
-
--->

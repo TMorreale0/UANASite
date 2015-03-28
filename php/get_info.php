@@ -23,6 +23,11 @@
 	$result_people = $conn->query($sql_people);
 	$other_people = "";
 	
+
+	/*
+	Get all the people, sort out the president, vp, and secretary
+	so that they can be displayed in proper order if they are present
+	*/
 	if($result_people->num_rows > 0) {
 		while($row_people = $result_people->fetch_assoc()) {
 			switch($row_people["Title"]) {
@@ -47,6 +52,7 @@
 		}
 	}
 
+	//Return JSON object (or outline of one to be interpreted)
 	echo "
 		{
 		'name':'". $row["FederationFormalName"] ."',
