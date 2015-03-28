@@ -1,19 +1,21 @@
-body {
-  /*background: linear-gradient(90deg, white, gray);*/
-  //background-color: #eee;
-}
-
 body, h1, p {
+  /*
   font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   margin: 0;
   padding: 0;
+  */
   text-align: center;
 }
 
-.container {
-  margin-left:  auto;
-  margin-right:  auto;
+.optionbox {
+  
+  margin-left: auto;
+  margin-right: auto;
+  /*
+  
+  margin: 0 auto;
+  */
   max-width: 500px;
   padding-right: 15px;
   padding-left: 15px;

@@ -1,0 +1,74 @@
+<!--
+
+<select id='fedBox' onchange='showFederation(getElementById("fedBox").value)'>
+    <option value="-1">Federations</option>
+    <option value="0">The Cayman Islands Amateur Swimming Association</option>
+    <option value="1">Puerto Rico</option>
+</select>
+
+<select id='fedBox'>
+    <option value="-1">Federations</option>
+    <option value="The Cayman Islands Amateur Swimming Association">The Cayman Islands Amateur Swimming Association</option>
+    <option value="Puerto Rico">Puerto Rico</option>
+</select>
+
+/================================
+//called fedBox in federation.html
+//called fedName in people.html
+
+<select id='fedBox'>
+	//copy and paste but leave off top 
+	//used in people.html, federations.html, home.html
+
+    <option value="-1">Federations</option>
+    <option value="Argentina">Argentina</option>
+    <option value="Bolivia">Bolivia</option>
+    <option value="Brazil">Brazil</option>
+    <option value="Colombia">Colombia</option>
+    <option value="Chile">Chile</option>
+    <option value="Ecuador">Ecuador</option>
+    <option value="Guyana">Guyana</option>
+    <option value="Paraguay">Paraguay</option>
+    <option value="Peru">Peru</option>
+    <option value="Surinam">Surinam</option>
+    <option value="Uruguay">Uruguay</option>
+    <option value="Venezuela">Venezuela</option>
+    <option value="Antigua - Barbuda">Antigua - Barbuda</option>
+    <option value="Antillas Nerlandezas">Antillas Nerlandezas</option>
+    <option value="Aruba">Aruba</option>
+    <option value="Bahamas">Bahamas</option>
+    <option value="Barbados">Barbados</option>
+    <option value="Bermuda">Bermuda</option>
+    <option value="British Virgin Islands">British Virgin Islands</option>
+    <option value="Cayman Islands">Cayman Islands</option>
+	<option value="Costa Rica">Costa Rica</option>
+	<option value="Cuba">Cuba</option>
+	<option value="Dominica">Dominica</option>
+	<option value="El Salvador">El Salvador</option>
+	<option value="Grenada">Grenada</option>
+	<option value="Guatemala">Guatemala</option>
+	<option value="Honduras">Honduras</option>
+	<option value="Virgin Islands">Virgin Islands</option>
+	<option value="Jamaica">Jamaica</option>
+	<option value="Mexico">Mexico</option>
+	<option value="Nicaragua">Nicaragua</option>
+	<option value="Panama">Panama</option>
+	<option value="Puerto Rico">Puerto Rico</option>
+	<option value="Dominican Republic">Dominican Republic</option>
+	<option value="St. Kitts &amp; Nevis">St. Kitts &amp; Nevis</option>
+	<option value="St. Lucia">St. Lucia</option>
+	<option value="St. Vincent and the Granadine">St. Vincent and the Granadine</option>
+	<option value="Trinidad &amp; Tobago">Trinidad &amp; Tobago</option>
+	<option value="United States">United States</option>
+	<option value="Canada">Canada</option>
+	<option value="Unaffiliated">Unaffiliated</option>
+</select>
+
+<select name='zoneName'>
+	<option value="CONSANAT">CONSANAT</option>
+	<option value="CCCAN">CCCAN</option>
+	<option value="USAS">USAS</option>
+	<option value="ACA">ACA</option>
+</select>
+
+-->

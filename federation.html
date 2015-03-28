@@ -1,0 +1,90 @@
+<html>
+	<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/site.css">
+	<link rel="stylesheet" href="css/grid-custom.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/site.css">
+	</head>
+	<body>
+		<h1>Enter A New Federation</h1><br>
+		<form action="php/federation.php" method="post">
+			<table class="table table-bordered table-hover">
+				<tr>
+					<td>Federation Name:</td>
+					<td>
+					<select name='fedBox'>
+					    <option value="-1">Federations</option>
+					    <option value="Argentina">Argentina</option>
+					    <option value="Bolivia">Bolivia</option>
+					    <option value="Brazil">Brazil</option>
+					    <option value="Colombia">Colombia</option>
+					    <option value="Chile">Chile</option>
+					    <option value="Ecuador">Ecuador</option>
+					    <option value="Guyana">Guyana</option>
+					    <option value="Paraguay">Paraguay</option>
+					    <option value="Peru">Peru</option>
+					    <option value="Surinam">Surinam</option>
+					    <option value="Uruguay">Uruguay</option>
+					    <option value="Venezuela">Venezuela</option>
+					    <option value="Antigua - Barbuda">Antigua - Barbuda</option>
+					    <option value="Antillas Nerlandezas">Antillas Nerlandezas</option>
+					    <option value="Aruba">Aruba</option>
+					    <option value="Bahamas">Bahamas</option>
+					    <option value="Barbados">Barbados</option>
+					    <option value="Bermuda">Bermuda</option>
+					    <option value="British Virgin Islands">British Virgin Islands</option>
+					    <option value="Cayman Islands">Cayman Islands</option>
+						<option value="Costa Rica">Costa Rica</option>
+						<option value="Cuba">Cuba</option>
+						<option value="Dominica">Dominica</option>
+						<option value="El Salvador">El Salvador</option>
+						<option value="Grenada">Grenada</option>
+						<option value="Guatemala">Guatemala</option>
+						<option value="Honduras">Honduras</option>
+						<option value="Virgin Islands">Virgin Islands</option>
+						<option value="Jamaica">Jamaica</option>
+						<option value="Mexico">Mexico</option>
+						<option value="Nicaragua">Nicaragua</option>
+						<option value="Panama">Panama</option>
+						<option value="Puerto Rico">Puerto Rico</option>
+						<option value="Dominican Republic">Dominican Republic</option>
+						<option value="St. Kitts &amp; Nevis">St. Kitts &amp; Nevis</option>
+						<option value="St. Lucia">St. Lucia</option>
+						<option value="St. Vincent and the Granadine">St. Vincent and the Granadine</option>
+						<option value="Trinidad &amp; Tobago">Trinidad &amp; Tobago</option>
+						<option value="United States">United States</option>
+						<option value="Canada">Canada</option>
+						<option value="Unaffiliated">Unaffiliated</option>
+					</select>
+					</td>
+				<tr><td>Federation Formal Name:</td><td><input type="text" width="20" name="federationFormalName"></td></tr>
+				<tr><td>Zone Number:</td><td><input type="number" name="zoneNum"></td></tr>
+				<tr><td>Zone Name:</td><td>
+					<select name='zoneName'>
+						<option value="CONSANAT">CONSANAT</option>
+						<option value="CCCAN">CCCAN</option>
+						<option value="USAS">USAS</option>
+						<option value="ACA">ACA</option>
+					</select>
+				</td></tr>
+				<tr><td>Federation Contact Name:</td><td><input type="text" name="fedContactName"></td></tr>
+				<tr><td>Email:</td><td><input type="email" name="email"></td></tr>
+				<tr><td>Phone:</td><td><input type="text" name="phone"></td></tr>
+				<tr><td>Street Address:</td><td><input type="text" name="streetAddr"></td></tr>
+				<tr><td>City:</td><td><input type="text" name="city"></td></tr>
+				<tr><td>Country:</td><td><input type="text" name="country"></td></tr>
+				<tr><td>Website:</td><td><input type="url" name="website"></td></tr>
+				<tr><td>Fax:</td><td><input type="text" name="fax"></td></tr>
+				<tr><td>Logo:</td><td><input type="text" name="logo"></td></tr>
+				<tr><td>Mission:</td><td><textarea rows="3" cols="40" name="mission"></textarea></td></tr>
+				<tr><td>Vision:</td><td><textarea rows="3" cols="40" name="vision"></textarea></td></tr>
+				<tr><td>Structure:</td><td><textarea rows="3" cols="40" name="structure"></textarea></td></tr>
+				<tr><td>Other:</td><td><textarea rows="3" cols="40" name="other"></textarea></td></tr>
+				<tr><td>Notes:</td><td><textarea rows="3" cols="40" name="notes"></textarea></td></tr>
+			</table>
+			<input type="submit" class="btn btn-default">
+	</body>
+</html>
