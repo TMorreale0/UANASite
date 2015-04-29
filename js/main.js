@@ -27,8 +27,10 @@ function getFederationData(fed) {
 
 	httpc.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 	httpc.onload = function () {
-		console.log(this.responseText);
-		postData(httpc.responseText);
+		var text = this.responseText;
+		text = text.replace(/(?:\\)/g, '\\\n');
+		console.log(text);
+		postData(text);
 	}
 	httpc.send(fed);
 
